@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	color : #FFDE00;
+
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family : Aref Ruqaa , Arial, Helvetica, sans-serif ;
+}
+
+nav{
+    min-height: 100px;
+}
+.nav-container{
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items:center;
+    justify-content: space-around;
+    height: 130px;
+}
+.nav-list{
+    width: 40%;
+
+}
+.nav-list li ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+    margin-left: 20%;
+}
+.nav-list li{
+    text-decoration: none;
+    list-style: none;
+}
+.logo{
+    background-color: rgba(0, 0, 0, 0.50);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 250px;
+    font-size: 35pt;
+    letter-spacing: 2px;
+    z-index: 3;
+    position: fixed;
+    left: 10%;
+}
+.logo h1{
+    font-family : IranNastaliq , Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+    letter-spacing: 2px;
+    color: #FFB428;
+}
+
+.nav-item{
+
+    border-bottom: 1px rgba(255, 255, 255 , 0.7) solid;
+
+}
+
+.nav-item a{
+	color : #FFDE00;
+    list-style: none;
+    text-decoration: none;
+    z-index: 3;
+    font-size: 20px;
+    transition: 0.5s;
+
+}
+header{
+    min-height: 600px;
+}
+
+.header-container{
+    height: 700px;
+    width: 100%;
+    display: block;
+    background-image:url("images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.exp{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-size: 80pt;
+    font-family : IranNastaliq , Arial, Helvetica, sans-serif;
+    filter: alpha(opacity=79) progid:DXImageTransform.Microsoft.Alpha(opacity=79) ;
+	opacity : 0.79;
+
+
+}
+
+.tag{
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 26pt;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.sec{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+.sec-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec-container h1{
+    font-size: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-bottom: 1px #ffdd0091 solid;
+    width: 30%;
+    text-align: center;
+}
+.sec-container p{
+    width: 70%;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.imgcont{
+    height: 600px;
+    width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0px 30px 100px rgba(0, 0, 0, 0.507);
+}
+.serv-cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sercard{
+    width: 30%;
+    height: 95%;
+    background-color: rgba(0, 0, 0, 0.541);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.sercard h1{
+    color: #FFB428;
+}
+
+.sercard p{
+    width: 60%;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.sercard ol li{
+    text-align: center;
+}
+
+.contact-container{
+    background-color: rgba(0, 0, 0, 0.815);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    font-size: 1.3rem;
+}
+.contact-container h3{
+    color: white;
+}
+
+.nav-item a:hover{
+    font-size: 1.3rem;
+    color: white;
+}
+
+@media(max-width: 967px){
+    .nav-list{
+        width: 40%;
+        margin-left: 30%;
+    }
+    .exp{
+        left: 24%;
+    }
+    .sercard{
+        width: 35%;
+        height: 95%;
+        background-color: rgba(0, 0, 0, 0.541);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contact-container{
+
+        flex-direction: column;
+        height: 250px;
+    }
+    
+}
+
+@media(max-width: 767px){
+    .nav-list{
+        width: 30%;
+        margin-left: 40%;
+        flex-direction: column;
+        font-size: 1.5rem;
+        align-items: center;
+    }
+    .nav-list li ul {
+        display: none;
+
+    }
+    .toggle-container:hover > ul{
+        display: block;
+        margin-top: 50px;
+        width: 100%;
+
+    }
+    .toggle-container:hover , .toggle-container:active {
+
+        border: none;
+
+    }
+    
+    .nav-item{
+        width: 50%;
+        text-align: center;
+    }
+  
+
+    .toggle-container{
+        border: 2px white solid;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 40px;
+        width: 70%;
+        margin-left: 70%;
+    }
+    .toggle{
+        width: 40px;
+        height: 2px;
+        background-color:#FFDE00;
+    }
+
+}
+
+
+@media(max-width: 736px){
+
+    .sercard{
+        width: 45%;
+        height: 100%;
+
+    }
+    .exp{
+        font-size: 70pt;
+    }
+    .tag{
+        left: 40%;
+        font-size: 28pt;
+    }
+}
+
+@media(max-width: 533px){
+
+    .exp{
+        font-size: 60pt;
+        left: 20%;
+    }
+    .tag{
+        left: 40%;
+        font-size: 20pt;
+    }
+    .nav-list{
+        margin-top: 4rem;
+    }
+    .logo{
+        height: 200px;
+        min-width: 150px;
+
+    }
+    .logo h1{
+        font-size: 35pt;
+    }
+    .sercard{
+        width: 45%;
+        height: 98%;
+        background-color: rgba(0, 0, 0, 0.541);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .sercard h1{
+        color: #FFB428;
+        font-size: 1.2rem;
+    }
+    
+    .sercard p{
+        width: 80%;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    .sercard li{
+
+        font-size: 0.7rem;
+        width: 70%;
+        margin-left: 1.5rem;
+
+    }
+    
+}
+
+@media(max-width: 454px){
+
+    .exp{
+        font-size: 50pt;
+        left: 30%;
+        top: 40%;
+    }
+    .tag{
+        left: 40%;
+        font-size: 20pt;
+    }
+    .contact-container{
+        font-size: 0.8rem;
+    }
+    .exp{
+        font-size: 50pt;
+        left: 15%;
+    }
+    .serv-h1{
+        margin-right: 6rem;
+    }
+}
