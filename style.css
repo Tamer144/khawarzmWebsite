@@ -63,7 +63,6 @@ nav{
     left: 10%;
 }
 .logo h1{
-    font-family : IranNastaliq , Arial, Helvetica, sans-serif;
     margin-top: 80px;
     letter-spacing: 2px;
     color: #FFB428;
@@ -103,9 +102,8 @@ header{
     top: 30%;
     left: 40%;
     font-size: 80pt;
-    font-family : IranNastaliq , Arial, Helvetica, sans-serif;
     filter: alpha(opacity=79) progid:DXImageTransform.Microsoft.Alpha(opacity=79) ;
-	opacity : 0.79;
+    opacity : 0.79;
 
 
 }
