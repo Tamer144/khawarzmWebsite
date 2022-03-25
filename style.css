@@ -146,12 +146,19 @@ header{
     margin-bottom: 5rem;
 }
 .imgcont{
-    height: 600px;
-    width: 100%;
+
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: inset 0px 30px 100px rgba(0, 0, 0, 0.507);
+}
+.img-sizes1{
+    height: 600px;
+    width: 100%;
+}
+.img-sizes2{
+    height: 600px;
+    width: 100%;
 }
 .serv-cont{
     display: flex;
@@ -206,15 +213,7 @@ header{
     .exp{
         left: 24%;
     }
-    .sercard{
-        width: 35%;
-        height: 95%;
-        background-color: rgba(0, 0, 0, 0.541);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
+    
     .contact-container{
 
         flex-direction: column;
@@ -270,16 +269,20 @@ header{
         background-color:#FFDE00;
     }
 
+
+    .sercard{
+        width: 40%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.541);
+
+    }
+
 }
 
 
 @media(max-width: 736px){
 
-    .sercard{
-        width: 45%;
-        height: 100%;
-
-    }
+    
     .exp{
         font-size: 70pt;
     }
@@ -309,35 +312,53 @@ header{
     }
     .logo h1{
         font-size: 35pt;
+        margin-bottom: 4rem;
     }
+    
+    .img-sizes2{
+        height: 10000px;
+    }
+
+    .sec-container p{
+        font-size: 1.3rem;
+    }
+
+    .serv-cont{
+        flex-direction: column;
+    }
+    .sercard p{
+        width: 80%;
+    }
+    .sercard h1{
+        font-size: 0.8rem;
+    }
+    .sercard li{
+        display: inline-block;
+        margin: 1%;
+        width: 15%;
+        color: #fff;
+        font-size: 0.7rem;
+    }
+    .sercard ol{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
     .sercard{
-        width: 45%;
-        height: 98%;
+        width: 100%;
+        height: 49%;
         background-color: rgba(0, 0, 0, 0.541);
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
     }
-    .sercard h1{
-        color: #FFB428;
-        font-size: 1.2rem;
-    }
-    
-    .sercard p{
-        width: 80%;
-        text-align: center;
-        font-size: 0.7rem;
-    }
 
-    .sercard li{
-
-        font-size: 0.7rem;
-        width: 70%;
-        margin-left: 1.5rem;
-
+    .sec-h1{
+        font-size: 3rem !important;
     }
-    
 }
 
 @media(max-width: 454px){
@@ -359,6 +380,8 @@ header{
         left: 15%;
     }
     .serv-h1{
-        margin-right: 6rem;
+        margin-right: 2rem;
     }
 }
+
+
